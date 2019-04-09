@@ -72,6 +72,15 @@ something33.addEventListener('dblclick', function(event){
 
 // #10
 
-something33.addEventListener('click', function(event){
-    event = alert('not cccc');
+const something44 = document.querySelector('.content-pick .destination:nth-child(3) .btn')
+
+something44.addEventListener('click', function(event){
+    alert('not cccc');
+    event.stopPropagation();
+})
+
+const contentPicker = document.querySelector('.content-pick');
+
+contentPicker.addEventListener('click', function(event){
+    event = console.log('no propagation');
 })
